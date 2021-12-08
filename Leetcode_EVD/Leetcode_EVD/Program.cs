@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Leetcode_EVD.Demo;
+using System;
 
 namespace Leetcode_EVD
 {
@@ -6,7 +7,8 @@ namespace Leetcode_EVD
     {
         static void Main(string[] args)
         {
-            HelloLeet.Hello();
+            //HelloLeet.Hello();
+            LinqTest.QueryOverInts();
             Console.ReadLine();
         }
     }
