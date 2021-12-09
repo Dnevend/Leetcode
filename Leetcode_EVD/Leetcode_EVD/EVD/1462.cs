@@ -41,13 +41,13 @@ namespace Leetcode_EVD.EVD
             int tmp = 0;
             for (int i = 0; i < nums.Length; i++)
             {
-                for (int j = 0; j < nums.Length - 1; j++)
+                for (int j = 0; j < nums.Length - 1 - i; j++)
                 {
-                    if (nums[i] > nums[j + 1])
+                    if (nums[j] > nums[j + 1])
                     {
-                        tmp = nums[i];
-                        nums[i] = nums[j + 1];
-                        nums[j + 1] = tmp;
+                        tmp = nums[j + 1];
+                        nums[j + 1] = nums[j];
+                        nums[j] = tmp;
                     }
                 }
             }
