@@ -18,38 +18,46 @@ namespace Leetcode_EVD.EVD
     public class ParkingSystem
     {
 
-        int bigSize, mediumSize, smallSize;
+        //int bigSize, mediumSize, smallSize;
+        int[] typeSize = new int[4];
 
         public ParkingSystem(int big, int medium, int small)
         {
-            this.bigSize = big;
-            this.mediumSize = medium;
-            this.smallSize = small;
+            //this.bigSize = big;
+            //this.mediumSize = medium;
+            //this.smallSize = small;
+            typeSize[1] = big;
+            typeSize[2] = medium;
+            typeSize[3] = small;
         }
 
         public bool AddCar(int carType)
         {
-            switch (carType)
+            if (--typeSize[carType] < 0)
             {
-                case 1:
-                    if (--bigSize < 0)
-                    {
-                        return false;
-                    }
-                    break;
-                case 2:
-                    if (--mediumSize < 0)
-                    {
-                        return false;
-                    }
-                    break;
-                case 3:
-                    if (--smallSize < 0)
-                    {
-                        return false;
-                    }
-                    break;
+                return false;
             }
+            //switch (carType)
+            //{
+            //    case 1:
+            //        if (--bigSize < 0)
+            //        {
+            //            return false;
+            //        }
+            //        break;
+            //    case 2:
+            //        if (--mediumSize < 0)
+            //        {
+            //            return false;
+            //        }
+            //        break;
+            //    case 3:
+            //        if (--smallSize < 0)
+            //        {
+            //            return false;
+            //        }
+            //        break;
+            //}
             return true;
         }
     }
