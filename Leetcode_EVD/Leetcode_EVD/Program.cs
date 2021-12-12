@@ -1,4 +1,5 @@
 ﻿using Leetcode_EVD.Demo;
+using Leetcode_EVD.EVD;
 using System;
 
 namespace Leetcode_EVD
@@ -8,7 +9,9 @@ namespace Leetcode_EVD
         static void Main(string[] args)
         {
             //HelloLeet.Hello();
-            LinqTest.QueryOverInts();
+            //LinqTest.QueryOverInts();
+            //LinqTest.linqSum();
+            _171.TitleToNumber("AAA");
             Console.ReadLine();
         }
     }

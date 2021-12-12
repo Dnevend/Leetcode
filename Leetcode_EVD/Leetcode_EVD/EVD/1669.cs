@@ -37,7 +37,7 @@ namespace Leetcode_EVD.EVD
             // way 2
             for (int i = 0; i < accounts.Length; i++)
             {
-                max = Math.Max(accounts[i].Sum(), max)
+                max = Math.Max(accounts[i].Sum(), max);
             }
 
             return max;

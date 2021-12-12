@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Leetcode_EVD.Demo
 {
-    class LinqTest
+    [TestClass()]
+    public class LinqTest
     {
 
         public static void QueryOverInts()
@@ -27,6 +29,24 @@ namespace Leetcode_EVD.Demo
             Console.WriteLine("subject is a: {0}", subject.GetType().Name);
             Console.WriteLine("subject is defined in: {0}", subject.GetType().Namespace);
 
+        }
+
+        [TestMethod()]
+        public static void linqSum()
+        {
+            int max = 0;
+            int[][] abc = new int[2][];
+
+            abc[0] = new int[] { 1, 2 };
+            abc[1] = new int[] { 3, 4, 5, 6 };
+
+            for (int i = 0; i < abc.Length; i++)
+            {
+                Console.WriteLine(abc[i].Sum());
+                max = Math.Max(abc[i].Sum(), max);
+            }
+
+            Assert.AreEqual(18, max);
         }
 
     }
