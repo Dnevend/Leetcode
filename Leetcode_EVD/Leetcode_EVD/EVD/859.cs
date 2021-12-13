@@ -21,6 +21,7 @@ namespace Leetcode_EVD.EVD
                 HashSet<int> hs = new HashSet<int>();
                 for (int i = 0; i < length; i++)
                 {
+                    // 没有可相互替换的字符
                     if (!hs.Add(s[i])) { return true; }
                 }
                 return false;
@@ -35,12 +36,7 @@ namespace Leetcode_EVD.EVD
                 }
             }
 
-            if (tmp.Count != 0 && tmp.Count != 2)
-            {
-                return false;
-            }
-
-            if (tmp.Count == 2 && (s[tmp[0]] != goal[tmp[1]] || goal[tmp[0]] != s[tmp[1]]))
+            if (tmp.Count != 2 || ((s[tmp[0]] != goal[tmp[1]] || goal[tmp[0]] != s[tmp[1]])))
             {
                 return false;
             }
