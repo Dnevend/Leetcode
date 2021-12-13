@@ -11,7 +11,8 @@ namespace Leetcode_EVD
             //HelloLeet.Hello();
             //LinqTest.QueryOverInts();
             //LinqTest.linqSum();
-            _171.TitleToNumber("AAA");
+            //_171.TitleToNumber("AAA");
+            Console.WriteLine(_859.BuddyStrings("aaaaaaabc", "aaaaaaacb"));
             Console.ReadLine();
         }
     }
