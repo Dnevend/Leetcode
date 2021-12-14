@@ -18,12 +18,14 @@ namespace Leetcode_EVD.EVD
             if (length != goal.Length) { return false; }
             if (s.Equals(goal))
             {
-                HashSet<int> hs = new HashSet<int>();
+                //HashSet<int> hs = new HashSet<int>();
+                int[] hs = new int[26];
                 for (int i = 0; i < length; i++)
                 {
-                    // 没有可相互替换的字符
-                    if (!hs.Add(s[i])) { return true; }
+                    if (++hs[s[i]] > 1) { return true; }
                 }
+
+                // 没有可相互替换的字符
                 return false;
             }
 
