@@ -8,6 +8,7 @@ namespace Leetcode_EVD.EVD
 {
     /// <summary>
     /// https://leetcode-cn.com/problems/buddy-strings/
+    /// 859. 亲密字符串
     /// </summary>
     class _859
     {
