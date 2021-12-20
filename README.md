@@ -3,6 +3,7 @@
 ## 2021.12
 
 - -->JavaScript<--
+- [2021.12.20__剑指 Offer II 032. 有效的变位词](./src/32/index.ts)
 - [2021.12.19__Demo.List2Tree](./src/Demo/list2tree.js)
 - [2021.12.18\_\_53. 最大子数组和-简单](./src/53/index.js)
 - [2021.12.17\_\_88. 合并两个有序数组-简单](./src/88/third.js)
