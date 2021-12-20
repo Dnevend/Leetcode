@@ -10,7 +10,11 @@ function isAnagram(s: string, t: string): boolean {
         return false;
     }
 
-    
+    // 创建一个数组并填充数据
+    // const table = new Array(26).fill(0);
+    // 判断两个数组是否相同
+    // Arrays.equals(str1, str2);
+
 	var ss = new Map();
 	var ts = new Map();
     for(var i = 0; i < s.length; i++)
