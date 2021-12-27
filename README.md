@@ -1,6 +1,7 @@
 # Leetcode EveryDay
 
 ## 2021.12
+- [2021.12.27__外观数列](./src/38/index.ts)
 - [2021.12.26__实现 strStr() "I'm five"](./src/28/index.ts)
 - [2021.12.26__字符串转换整数](./src/8/index.ts)
 - [2021.12.26__Tree2List-Me ](./src/Tree2List/index.js)/[ -FTY](./src/Tree2List/FTY.js)

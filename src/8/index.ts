@@ -29,9 +29,9 @@ function myAtoi(s: string): number {
     let result = parseInt(sValue) * tran;
     // 边界判断
     result = tran === -1 ? 
-        (result < Math.pow(-2, 31) ? Math.pow(-2, 31) : result) 
+        Math.max(result, Math.pow(-2, 31))
         : 
-        (result > Math.pow(2, 31) - 1 ? Math.pow(2, 31) -1 : result);
+        Math.min(result, Math.pow(2, 31) - 1);
 
     return result;
 };
