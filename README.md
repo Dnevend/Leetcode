@@ -1,6 +1,7 @@
 # Leetcode EveryDay
 
 ## 2021.12
+- [2021.12.28__最长公共前缀](./src/14/index.ts)
 - [2021.12.27__外观数列](./src/38/index.ts)
 - [2021.12.26__实现 strStr() "I'm five"](./src/28/index.ts)
 - [2021.12.26__字符串转换整数](./src/8/index.ts)
