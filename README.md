@@ -1,6 +1,7 @@
 # Leetcode EveryDay
 
 ## 2021.12
+- [2021.12.29__删除链表的倒数第 N 个结点](./src/19/index.ts)
 - [2021.12.28__最长公共前缀](./src/14/index.ts)
 - [2021.12.27__外观数列](./src/38/index.ts)
 - [2021.12.26__实现 strStr() "I'm five"](./src/28/index.ts)
